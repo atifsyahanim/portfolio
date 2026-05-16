@@ -1,802 +1,1399 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Atif | Data Science Enthusiast</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <!-- Google Fonts: Syne (display) + DM Sans (body) -->
-    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=DM+Sans:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
     <!-- Phosphor Icons (lightweight icon set) -->
-    <script src="https://unpkg.com/@phosphor-icons/web@2.0.3/src/index.js" defer></script>
+    <script
+      src="https://unpkg.com/@phosphor-icons/web@2.0.3/src/index.js"
+      defer
+    ></script>
     <!-- Images -->
-     
-</head>
-<body>
-
-<!-- ─────────────────────────────────────────
+  </head>
+  <body>
+    <!-- ─────────────────────────────────────────
      NAVBAR
 ──────────────────────────────────────────── -->
-<nav id="navbar">
-    <div class="nav-logo">
-        <span class="logo-dot"></span>atif
-    </div>
-    <ul class="nav-links">
+    <nav id="navbar">
+      <div class="nav-logo"><span class="logo-dot"></span>atif</div>
+      <ul class="nav-links">
         <li><a href="#about">About</a></li>
         <li><a href="#experience">Experience</a></li>
         <li><a href="#projects">Projects</a></li>
-        <li><a href="#education">Education</a></li>     
+        <li><a href="#education">Education</a></li>
         <li><a href="#contact">Contact</a></li>
-    </ul>
-    <!-- Hamburger for mobile -->
-    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      </ul>
+      <!-- Hamburger for mobile -->
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
         <span></span><span></span><span></span>
-    </button>
-</nav>
+      </button>
+    </nav>
 
-<!-- Mobile menu overlay -->
-<div class="mobile-menu" id="mobileMenu">
-    <ul>
+    <!-- Mobile menu overlay -->
+    <div class="mobile-menu" id="mobileMenu">
+      <ul>
         <li><a href="#about" onclick="closeMobileMenu()">About</a></li>
         <li><a href="#education" onclick="closeMobileMenu()">Education</a></li>
         <li><a href="#projects" onclick="closeMobileMenu()">Projects</a></li>
-        <li><a href="#experience" onclick="closeMobileMenu()">Experience</a></li>
+        <li>
+          <a href="#experience" onclick="closeMobileMenu()">Experience</a>
+        </li>
         <li><a href="#contact" onclick="closeMobileMenu()">Contact</a></li>
-    </ul>
-</div>
+      </ul>
+    </div>
 
-<!-- ─────────────────────────────────────────
+    <!-- ─────────────────────────────────────────
      HERO
 ──────────────────────────────────────────── -->
-<header class="hero">
-    <div class="hero-bg-grid"></div>
-    <div class="hero-content">
+    <header class="hero">
+      <div class="hero-bg-grid"></div>
+      <div class="hero-content">
         <p class="hero-eyebrow">Hello, I'm</p>
         <h1 class="hero-name">Atif</h1>
-        <p class="hero-tagline">Data &amp; AI Practitioner<span class="divider">·</span> Machine Learnings<span class="divider">·</span> Analytics</p>
+        <p class="hero-tagline">
+          Data &amp; AI Practitioner<span class="divider">·</span> Machine
+          Learnings<span class="divider">·</span> Analytics
+        </p>
         <div class="hero-cta">
-            <a href="#projects" class="btn-primary">View My Work</a>
-            <a href="#contact" class="btn-ghost">Get In Touch</a>
+          <a href="#projects" class="btn-primary">View My Work</a>
+          <a href="#contact" class="btn-ghost">Get In Touch</a>
         </div>
-    </div>
-    <!-- Decorative blobs -->
-    <div class="blob blob-1"></div>
-    <div class="blob blob-2"></div>
-</header>
+      </div>
+      <!-- Decorative blobs -->
+      <div class="blob blob-1"></div>
+      <div class="blob blob-2"></div>
+    </header>
 
-<!-- ─────────────────────────────────────────
+    <!-- ─────────────────────────────────────────
      ABOUT
 ──────────────────────────────────────────── -->
-<section id="about" class="section fade-up">
-    <div class="section-inner">
+    <section id="about" class="section fade-up">
+      <div class="section-inner">
         <span class="section-label">About Me</span>
         <h2 class="section-title">Who I Am</h2>
         <div class="about-content">
-            <!-- Profile photo placeholder – replace src with your actual photo -->
-            <div class="about-photo-wrap">
-    <div class="about-photo-inner">
-        <div class="about-photo-ring"></div>
-        <img
-            src="images/profile atif.jpeg"
-            alt="Atif – profile photo"
-            class="about-img"
-            onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
-        >
-        <div class="about-avatar-fallback" style="display:none;">
-            <i class="ph ph-user"></i>
-        </div>
-    </div>
-    <p class="about-name">Nur Atif Syahanim binti Aminuddin</p>
-</div>
-            <div class="about-text">
-                <p>
-                    I'm a recent graduate in <strong>Information Systems (Intelligent Systems Engineering)</strong> from UiTM Shah Alam, with a strong interest in building intelligent solutions for real-world problems.
-                </p>
-                <p>
-                    My work focuses on <strong>machine learning, AI, and computer vision,</strong> with hands-on experience in AI projects and predictive analytics.
-                    I also work with data analytics tools to transform messy data into meaningful insights and support data-driven decision-making.
-                </p>
-                <p>Additionally, I have experience developing <strong>software prototypes</strong> and practical applications as part of academic projects,
-                    demonstrating my ability to turn ideas into working solutions.</p>
-            
-                <div class="about-tags">
-                    <span>Machine Learning</span>
-                    <span>Artificial Intelligence</span>
-                   <span>Data Analytics</span>
-                    <span>Data Visualization</span>
-                    <span>Power BI</span>
-                    <span>Python</span>
-                    <span>SQL</span>
-                    <span>R</span>
-                    <span>HTML/CSS</span>
-                    <span>JavaScript</span>
-                    <span>React</span>
-                    <span>Computer Vision</span>
-                    
-                </div>
+          <!-- Profile photo placeholder – replace src with your actual photo -->
+          <div class="about-photo-wrap">
+            <div class="about-photo-inner">
+              <div class="about-photo-ring"></div>
+              <img
+                src="images/profile atif.jpeg"
+                alt="Atif – profile photo"
+                class="about-img"
+                onerror="
+                  this.style.display = 'none';
+                  this.nextElementSibling.style.display = 'flex';
+                "
+              />
+              <div class="about-avatar-fallback" style="display: none">
+                <i class="ph ph-user"></i>
+              </div>
             </div>
-        </div>
-    </div>
-</section>
+            <p class="about-name">Nur Atif Syahanim binti Aminuddin</p>
+          </div>
+          <div class="about-text">
+            <p>
+              I'm a recent graduate in
+              <strong
+                >Information Systems (Intelligent Systems Engineering)</strong
+              >
+              from UiTM Shah Alam, with a strong interest in building
+              intelligent solutions for real-world problems.
+            </p>
+            <p>
+              My work focuses on
+              <strong>machine learning, AI, and computer vision,</strong> with
+              hands-on experience in AI projects and predictive analytics. I
+              also work with data analytics tools to transform messy data into
+              meaningful insights and support data-driven decision-making.
+            </p>
+            <p>
+              Additionally, I have experience developing
+              <strong>software prototypes</strong> and practical applications as
+              part of academic projects, demonstrating my ability to turn ideas
+              into working solutions.
+            </p>
 
-<!-- ─────────────────────────────────────────
+            <div class="about-tags">
+              <span>Machine Learning</span>
+              <span>Artificial Intelligence</span>
+              <span>Data Analytics</span>
+              <span>Data Visualization</span>
+              <span>Power BI</span>
+              <span>Python</span>
+              <span>SQL</span>
+              <span>R</span>
+              <span>HTML/CSS</span>
+              <span>JavaScript</span>
+              <span>React</span>
+              <span>Computer Vision</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─────────────────────────────────────────
      EXPERIENCE
 ──────────────────────────────────────────── -->
-<section id="experience" class="section section-alt fade-up">
-    <div class="section-inner">
+    <section id="experience" class="section section-alt fade-up">
+      <div class="section-inner">
         <span class="section-label">Work History</span>
         <h2 class="section-title">Experience</h2>
 
         <div class="exp-card">
-            <div class="exp-logo">
-                <i class="ph ph-buildings"></i>
+          <div class="exp-logo">
+            <i class="ph ph-buildings"></i>
+          </div>
+          <div class="exp-body">
+            <div class="exp-header">
+              <div>
+                <h3>Technology Intern</h3>
+                <p class="exp-company">Deloitte</p>
+              </div>
+              <span class="exp-period">2025</span>
             </div>
-            <div class="exp-body">
-                <div class="exp-header">
-                    <div>
-                        <h3>Technology Intern</h3>
-                        <p class="exp-company">Deloitte</p>
-                    </div>
-                    <span class="exp-period">2025</span>
-                </div>
-                <ul class="exp-bullets">
-                    <li>
-                        Contributed to the development of a <strong>microfrontend mobile application</strong>
-                        using <strong>React Native</strong>, improving UI modularity and enabling independent
-                        deployment of feature modules across teams.
-                    </li>
-                    <li>
-                        Explored the use of <strong>graph databases</strong> (Neo4j) as a productivity tool
-                        for developers, exploring how it could improve workflows and team efficiency.
-                    </li>
-                    <li>
-                        Collaborated with a cross-functional team to create standardized API documentation across
-                        regions for client projects.
-                    </li>
-                </ul>
-                <div class="exp-tags">
-                    <span>Mobile Application</span>
-                    <span>React Native</span>
-                    <span>Microfrontend Architecture</span>
-                    <span>Graph Database</span>
-                    <span>Neo4j</span>
-                    
-                </div>
+            <ul class="exp-bullets">
+              <li>
+                Contributed to the development of a
+                <strong>microfrontend mobile application</strong> using
+                <strong>React Native</strong>, improving UI modularity and
+                enabling independent deployment of feature modules across teams.
+              </li>
+              <li>
+                Explored the use of <strong>graph databases</strong> (Neo4j) as
+                a productivity tool for developers, exploring how it could
+                improve workflows and team efficiency.
+              </li>
+              <li>
+                Collaborated with a cross-functional team to create standardized
+                API documentation across regions for client projects.
+              </li>
+            </ul>
+            <div class="exp-tags">
+              <span>Mobile Application</span>
+              <span>React Native</span>
+              <span>Microfrontend Architecture</span>
+              <span>Graph Database</span>
+              <span>Neo4j</span>
             </div>
+          </div>
         </div>
+      </div>
+    </section>
 
-    </div>
-</section>
-
-<!-- ─────────────────────────────────────────
+    <!-- ─────────────────────────────────────────
      PROJECTS
 ──────────────────────────────────────────── -->
-<section id="projects" class="section fade-up">
-    <div class="section-inner">
+    <section id="projects" class="section fade-up">
+      <div class="section-inner">
         <span class="section-label">What I've Built</span>
         <h2 class="section-title">Projects</h2>
-        <p class="section-sub">Click any card to explore the full project details.</p>
+        <p class="section-sub">
+          Click any card to explore the full project details.
+        </p>
 
         <div class="projects-grid">
+          <!-- Project 1: Voice Pathology -->
+          <div
+            class="project-card"
+            onclick="openModal('modal-voice')"
+            role="button"
+            tabindex="0"
+            style="--card-bg: url(&quot;images/spectrogram.jpg&quot;)"
+          >
+            <div class="card-overlay"></div>
+            <div class="card-tag">Deep Learning · Audio Processing</div>
+            <div class="card-body">
+              <h3>Voice Pathology Detection</h3>
+              <p>
+                CNN model using MFCC features to detect voice disorders from
+                audio signals.
+              </p>
+            </div>
+            <div class="card-arrow"><i class="ph ph-arrow-up-right"></i></div>
+          </div>
 
-            <!-- Project 1: Voice Pathology -->
-            <div class="project-card" onclick="openModal('modal-voice')" role="button" tabindex="0"
-                 style="--card-bg: url('images/spectrogram.jpg');">
-                <div class="card-overlay"></div>
-                <div class="card-tag">Deep Learning · Audio Processing</div>
-                <div class="card-body">
-                    <h3>Voice Pathology Detection</h3>
-                    <p>CNN model using MFCC features to detect voice disorders from audio signals.</p>
-                </div>
-                <div class="card-arrow"><i class="ph ph-arrow-up-right"></i></div>
+          <!-- Project 2: Glaucoma Detection -->
+          <div
+            class="project-card"
+            onclick="openModal('modal-glaucoma')"
+            role="button"
+            tabindex="0"
+            style="--card-bg: url(&quot;images/glaucoma.jpeg&quot;)"
+          >
+            <div class="card-overlay"></div>
+            <div class="card-tag">Deep Learning · Computer Vision</div>
+            <div class="card-body">
+              <h3>Glaucoma Detection</h3>
+              <p>
+                ML model for early glaucoma diagnosis from fundus images with
+                Grad-CAM visualization.
+              </p>
+            </div>
+            <div class="card-arrow"><i class="ph ph-arrow-up-right"></i></div>
+          </div>
+
+          <!-- Project 3: Rimba-X -->
+          <div
+            class="project-card"
+            onclick="openModal('modal-rimbax')"
+            role="button"
+            tabindex="0"
+            style="--card-bg: url(&quot;images/rimbax-cover.jpeg&quot;)"
+          >
+            <div class="card-overlay"></div>
+
+            <div class="card-tag">AI Platform · Career Tech</div>
+
+            <div class="card-body">
+              <h3>Rimba-X</h3>
+              <p>
+                AI-powered career readiness platform that analyzes resumes,
+                identifies skill gaps, and recommends learning pathways.
+              </p>
             </div>
 
-            <!-- Project 2: Glaucoma Detection -->
-            <div class="project-card" onclick="openModal('modal-glaucoma')" role="button" tabindex="0"
-                 style="--card-bg: url('images/glaucoma.jpeg');">
-                <div class="card-overlay"></div>
-                <div class="card-tag">Deep Learning · Computer Vision</div>
-                <div class="card-body">
-                    <h3>Glaucoma Detection</h3>
-                    <p>ML model for early glaucoma diagnosis from fundus images with Grad-CAM visualization.</p>
-                </div>
-                <div class="card-arrow"><i class="ph ph-arrow-up-right"></i></div>
+            <div class="card-arrow">
+              <i class="ph ph-arrow-up-right"></i>
             </div>
+          </div>
 
-            <!-- Project 3: RAG - The Glory -->
-            <div class="project-card" onclick="openModal('modal-rag')" role="button" tabindex="0"
-                style="--card-bg: url('images/the-glory-poster.jpg');">
-                <div class="card-overlay"></div>
-                <div class="card-tag">RAG · LLM · NLP</div>
-                <div class="card-body">
-                    <h3>RAG Chatbot – The Glory</h3>
-                    <p>Interactive chatbot querying a PDF about the K-drama The Glory using Retrieval-Augmented Generation.</p>
-                </div>
-                <div class="card-arrow"><i class="ph ph-arrow-up-right"></i></div>
+          <!-- Project 4: RAG - The Glory -->
+          <div
+            class="project-card"
+            onclick="openModal('modal-rag')"
+            role="button"
+            tabindex="0"
+            style="--card-bg: url(&quot;images/the-glory-poster.jpg&quot;)"
+          >
+            <div class="card-overlay"></div>
+            <div class="card-tag">RAG · LLM · NLP</div>
+            <div class="card-body">
+              <h3>RAG Chatbot – The Glory</h3>
+              <p>
+                Interactive chatbot querying a PDF about the K-drama The Glory
+                using Retrieval-Augmented Generation.
+              </p>
             </div>
+            <div class="card-arrow"><i class="ph ph-arrow-up-right"></i></div>
+          </div>
 
-            <!-- Project 4: Database Management -->
-            <div class="project-card" onclick="openModal('modal-database')" role="button" tabindex="0"
-                 style="--card-bg: url('images/dbms.png');">
-                <div class="card-overlay"></div>
-                <div class="card-tag">Database · Dashboard</div>
-                <div class="card-body">
-                    <h3>Kindergarten Registration System</h3>
-                    <p>Developed a database system to manage student registration and dashboard for teachers and admin.</p>
-                </div>
-                <div class="card-arrow"><i class="ph ph-arrow-up-right"></i></div>
+          <!-- Project 5: Database Management -->
+          <div
+            class="project-card"
+            onclick="openModal('modal-database')"
+            role="button"
+            tabindex="0"
+            style="--card-bg: url(&quot;images/dbms.png&quot;)"
+          >
+            <div class="card-overlay"></div>
+            <div class="card-tag">Database · Dashboard</div>
+            <div class="card-body">
+              <h3>Kindergarten Registration System</h3>
+              <p>
+                Developed a database system to manage student registration and
+                dashboard for teachers and admin.
+              </p>
             </div>
+            <div class="card-arrow"><i class="ph ph-arrow-up-right"></i></div>
+          </div>
 
-            <!-- Project 5: Life Expectancy -->
-            <div class="project-card" onclick="openModal('modal-life')" role="button" tabindex="0"
-                style="--card-bg: url('images/LE.jpeg');">
-                <div class="card-overlay"></div>
-                <div class="card-tag">Data Analytics · Data Visualization</div>
-                <div class="card-body">
-                    <h3>Life Expectancy Analysis</h3>
-                    <p>Interactive dashboard analyzing global life expectancy trends and key influencing factors.</p>
-                </div>
-                <div class="card-arrow"><i class="ph ph-arrow-up-right"></i></div>
+          <!-- Project 6: Life Expectancy -->
+          <div
+            class="project-card"
+            onclick="openModal('modal-life')"
+            role="button"
+            tabindex="0"
+            style="--card-bg: url(&quot;images/LE.jpeg&quot;)"
+          >
+            <div class="card-overlay"></div>
+            <div class="card-tag">Data Analytics · Data Visualization</div>
+            <div class="card-body">
+              <h3>Life Expectancy Analysis</h3>
+              <p>
+                Interactive dashboard analyzing global life expectancy trends
+                and key influencing factors.
+              </p>
             </div>
+            <div class="card-arrow"><i class="ph ph-arrow-up-right"></i></div>
+          </div>
 
-            <!-- Project 6: Train Ridership -->
-            <div class="project-card" onclick="openModal('modal-datathon')" role="button" tabindex="0"
-                style="--card-bg: url('images/train.jpg');">
-                <div class="card-overlay"></div>
-                <div class="card-tag">Data Analytics · Data Visualization</div>
-                <div class="card-body">
-                    <h3>Malaysia Train Ridership Prediction</h3>
-                    <p>Datathon project analyzing train ridership and developing predictive insights with an interactive dashboard.</p>
-                </div>
-                <div class="card-arrow"><i class="ph ph-arrow-up-right"></i></div>
+          <!-- Project 7: Train Ridership -->
+          <div
+            class="project-card"
+            onclick="openModal('modal-datathon')"
+            role="button"
+            tabindex="0"
+            style="--card-bg: url(&quot;images/train.jpg&quot;)"
+          >
+            <div class="card-overlay"></div>
+            <div class="card-tag">Data Analytics · Data Visualization</div>
+            <div class="card-body">
+              <h3>Malaysia Train Ridership Prediction</h3>
+              <p>
+                Datathon project analyzing train ridership and developing
+                predictive insights with an interactive dashboard.
+              </p>
             </div>
-
+            <div class="card-arrow"><i class="ph ph-arrow-up-right"></i></div>
+          </div>
         </div>
-    </div>
-</section>
+      </div>
+    </section>
 
-<!-- ─────────────────────────────────────────
+    <!-- ─────────────────────────────────────────
      PROJECT MODALS
 ──────────────────────────────────────────── -->
 
-<!-- Modal: Voice Pathology -->
-<div id="modal-voice" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-voice-title">
-    <div class="modal-backdrop" onclick="closeModal('modal-voice')"></div>
-    <div class="modal-content">
-        <button class="modal-close" onclick="closeModal('modal-voice')" aria-label="Close modal">
-            <i class="ph ph-x"></i>
+    <!-- Modal: Voice Pathology -->
+    <div
+      id="modal-voice"
+      class="modal"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="modal-voice-title"
+    >
+      <div class="modal-backdrop" onclick="closeModal('modal-voice')"></div>
+      <div class="modal-content">
+        <button
+          class="modal-close"
+          onclick="closeModal('modal-voice')"
+          aria-label="Close modal"
+        >
+          <i class="ph ph-x"></i>
         </button>
 
         <div class="modal-tag">Deep Learning · Audio Processing</div>
         <h3 id="modal-voice-title">Voice Pathology Detection</h3>
 
         <p class="modal-desc">
-            A convolutional neural network (CNN) trained to classify voice recordings as healthy or pathological,
-            using Mel-frequency cepstral coefficients (MFCCs) as input features.
+          A convolutional neural network (CNN) trained to classify voice
+          recordings as healthy or pathological, using Mel-frequency cepstral
+          coefficients (MFCCs) as input features.
         </p>
 
         <div class="modal-section">
-            <h4>Tech Stack</h4>
-            <div class="tech-tags">
-                <span>Python</span>
-                <span>TensorFlow / Keras</span>
-                <span>Keras-CV</span>
-                <span>Librosa</span>
-                <span>SoundFile</span>
-                <span>PyDub</span>
-                <span>WebRTC VAD</span>
-                <span>Audiomentations</span>
-                <span>NumPy</span>
-                <span>Matplotlib</span>
-                <span>Seaborn</span>
-                <span>Scikit-learn</span>
-                <span>HuggingFace</span>
-                <span>Gradio</span>
-                <span>HTML/CSS</span>
-            </div>
+          <h4>Tech Stack</h4>
+          <div class="tech-tags">
+            <span>Python</span>
+            <span>TensorFlow / Keras</span>
+            <span>Keras-CV</span>
+            <span>Librosa</span>
+            <span>SoundFile</span>
+            <span>PyDub</span>
+            <span>WebRTC VAD</span>
+            <span>Audiomentations</span>
+            <span>NumPy</span>
+            <span>Matplotlib</span>
+            <span>Seaborn</span>
+            <span>Scikit-learn</span>
+            <span>HuggingFace</span>
+            <span>Gradio</span>
+            <span>HTML/CSS</span>
+          </div>
         </div>
 
         <div class="modal-section">
-            <h4>What I Did</h4>
-            <ul>
-                <li>Acquired voice samples from Hospital UiTM Puncak Alam (HASA) and self-collected data</li>
-                <li>Extracted MFCC and spectral features using Librosa, and further preprocessing</li>
-                <li>Applied augmentations (time-stretching, pitch-shifting) to handle class imbalance and increase dataset size</li>
-                <li>Designed and trained a ResNet-based CNN for audio classification</li>
-                <li>Evaluated performance with accuracy, F1-score, and confusion matrices</li>
-                <li>Deployed the model into a web-based prototype and published on HuggingFace</li>
-                <li>Results are validated by an expert in ENT</li>
-            </ul>
+          <h4>What I Did</h4>
+          <ul>
+            <li>
+              Acquired voice samples from Hospital UiTM Puncak Alam (HASA) and
+              self-collected data
+            </li>
+            <li>
+              Extracted MFCC and spectral features using Librosa, and further
+              preprocessing
+            </li>
+            <li>
+              Applied augmentations (time-stretching, pitch-shifting) to handle
+              class imbalance and increase dataset size
+            </li>
+            <li>
+              Designed and trained a ResNet-based CNN for audio classification
+            </li>
+            <li>
+              Evaluated performance with accuracy, F1-score, and confusion
+              matrices
+            </li>
+            <li>
+              Deployed the model into a web-based prototype and published on
+              HuggingFace
+            </li>
+            <li>Results are validated by an expert in ENT</li>
+          </ul>
         </div>
 
         <!-- Images: replace src values when you have them -->
         <div class="modal-images">
-            <figure class="modal-figure">
-                <figcaption class="modal-caption">Poster</figcaption>
-                <img src="images/pathology-poster.png" alt="pathology-poster" onerror="this.style.display='none'">
-            </figure>
-            <figure class="modal-figure">
-                <figcaption class="modal-caption">Prototype</figcaption>
-                <img src="images/pathology-prototype.png" alt="pathology-prototype" onerror="this.style.display='none'">
-            </figure>
-            <figure class="modal-figure">
-                <figcaption class="modal-caption">Model Experiments (36 models trained)</figcaption>
-                <img src="images/pathology-model training.png" alt="pathology-model training" onerror="this.style.display='none'">
-            </figure>
-            <figure class="modal-figure">
-                <figcaption class="modal-caption">Model Plots</figcaption>
-                <img src="images/pathology-plots.png" alt="pathology-plots" onerror="this.style.display='none'">
-            </figure>
-            <figure class="modal-figure">
-                <figcaption class="modal-caption">Model Performance</figcaption>
-                <img src="images/pathology-performance.png" alt="pathology-performance" onerror="this.style.display='none'">
-            </figure>
-
+          <figure class="modal-figure">
+            <figcaption class="modal-caption">Poster</figcaption>
+            <img
+              src="images/pathology-poster.png"
+              alt="pathology-poster"
+              onerror="this.style.display = 'none'"
+            />
+          </figure>
+          <figure class="modal-figure">
+            <figcaption class="modal-caption">Prototype</figcaption>
+            <img
+              src="images/pathology-prototype.png"
+              alt="pathology-prototype"
+              onerror="this.style.display = 'none'"
+            />
+          </figure>
+          <figure class="modal-figure">
+            <figcaption class="modal-caption">
+              Model Experiments (36 models trained)
+            </figcaption>
+            <img
+              src="images/pathology-model training.png"
+              alt="pathology-model training"
+              onerror="this.style.display = 'none'"
+            />
+          </figure>
+          <figure class="modal-figure">
+            <figcaption class="modal-caption">Model Plots</figcaption>
+            <img
+              src="images/pathology-plots.png"
+              alt="pathology-plots"
+              onerror="this.style.display = 'none'"
+            />
+          </figure>
+          <figure class="modal-figure">
+            <figcaption class="modal-caption">Model Performance</figcaption>
+            <img
+              src="images/pathology-performance.png"
+              alt="pathology-performance"
+              onerror="this.style.display = 'none'"
+            />
+          </figure>
         </div>
 
-        <a href="https://github.com/atifsyahanim/pathology-classification-cnn.git" target="_blank" rel="noopener" class="btn-primary modal-cta">
-            <i class="ph ph-github-logo"></i> View on GitHub
+        <a
+          href="https://github.com/atifsyahanim/pathology-classification-cnn.git"
+          target="_blank"
+          rel="noopener"
+          class="btn-primary modal-cta"
+        >
+          <i class="ph ph-github-logo"></i> View on GitHub
         </a>
+      </div>
     </div>
-</div>
 
-<!-- Modal: Glaucoma Detection -->
-<div id="modal-glaucoma" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-glaucoma-title">
-    <div class="modal-backdrop" onclick="closeModal('modal-glaucoma')"></div>
-    <div class="modal-content">
-        <button class="modal-close" onclick="closeModal('modal-glaucoma')" aria-label="Close modal">
-            <i class="ph ph-x"></i>
+    <!-- Modal: Glaucoma Detection -->
+    <div
+      id="modal-glaucoma"
+      class="modal"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="modal-glaucoma-title"
+    >
+      <div class="modal-backdrop" onclick="closeModal('modal-glaucoma')"></div>
+      <div class="modal-content">
+        <button
+          class="modal-close"
+          onclick="closeModal('modal-glaucoma')"
+          aria-label="Close modal"
+        >
+          <i class="ph ph-x"></i>
         </button>
 
         <div class="modal-tag">Computer Vision · Healthcare AI</div>
         <h3 id="modal-glaucoma-title">Glaucoma Detection</h3>
 
         <p class="modal-desc">
-            Competed in an International Data Science Challenge (IDSC). Developed an
-            automated glaucoma screening system that analyses retinal fundus images to
-            predict the presence of glaucoma, with Grad-CAM heatmaps for explainability.
+          Competed in an International Data Science Challenge (IDSC). Developed
+          an automated glaucoma screening system that analyses retinal fundus
+          images to predict the presence of glaucoma, with Grad-CAM heatmaps for
+          explainability.
         </p>
 
         <div class="modal-section">
-            <h4>Tech Stack</h4>
-            <div class="tech-tags">
-                <span>Python</span><span>PyTorch / Torchvision</span><span>OpenCV</span>
-                <span>PIL / Pillow</span><span>Roboflow</span><span>Matplotlib</span>
-                <span>Grad-CAM</span><span>Scikit-learn</span><span>NumPy & Pandas</span>
-                <span>Gradio</span><span>HTML/CSS</span>
-            </div>
+          <h4>Tech Stack</h4>
+          <div class="tech-tags">
+            <span>Python</span><span>PyTorch / Torchvision</span
+            ><span>OpenCV</span> <span>PIL / Pillow</span><span>Roboflow</span
+            ><span>Matplotlib</span> <span>Grad-CAM</span
+            ><span>Scikit-learn</span><span>NumPy & Pandas</span>
+            <span>Gradio</span><span>HTML/CSS</span>
+          </div>
         </div>
 
         <div class="modal-section">
-            <h4>What I Did</h4>
-            <ul>
-                <li>Manually annotated 700+ retinal fundus images for training data</li>
-                <li>Performed image preprocessing and augmentation</li>
-                <li>Fine-tuned a ResNet-based classification model via transfer learning</li>
-                <li>Implemented Grad-CAM to generate visual explanations of model predictions</li>
-            </ul>
+          <h4>What I Did</h4>
+          <ul>
+            <li>
+              Manually annotated 700+ retinal fundus images for training data
+            </li>
+            <li>Performed image preprocessing and augmentation</li>
+            <li>
+              Fine-tuned a ResNet-based classification model via transfer
+              learning
+            </li>
+            <li>
+              Implemented Grad-CAM to generate visual explanations of model
+              predictions
+            </li>
+          </ul>
         </div>
 
         <!-- Images -->
         <div class="modal-images">
-            <figure class="modal-figure">
-                <figcaption class="modal-caption">Annotation</figcaption>
-                <img src="images/glaucoma-annotate.png" alt="glaucoma-annotate" onerror="this.style.display='none'">
-             </figure>
-            <figure class="modal-figure">
-                <figcaption class="modal-caption">Prototype</figcaption>
-                <img src="images/glaucoma-prototype1.jpeg" alt="glaucoma-prototype1" onerror="this.style.display='none'">
-                <img src="images/glaucoma-prototype2.jpeg" alt="glaucoma-prototype1" onerror="this.style.display='none'">
-            </figure>
-            <figure class="modal-figure">
-                <figcaption class="modal-caption">Model Training & Metrics</figcaption>
-                <img src="images/glaucoma-model training.png" alt="glaucoma-model training" onerror="this.style.display='none'">
-            </figure>
+          <figure class="modal-figure">
+            <figcaption class="modal-caption">Annotation</figcaption>
+            <img
+              src="images/glaucoma-annotate.png"
+              alt="glaucoma-annotate"
+              onerror="this.style.display = 'none'"
+            />
+          </figure>
+          <figure class="modal-figure">
+            <figcaption class="modal-caption">Prototype</figcaption>
+            <img
+              src="images/glaucoma-prototype1.jpeg"
+              alt="glaucoma-prototype1"
+              onerror="this.style.display = 'none'"
+            />
+            <img
+              src="images/glaucoma-prototype2.jpeg"
+              alt="glaucoma-prototype1"
+              onerror="this.style.display = 'none'"
+            />
+          </figure>
+          <figure class="modal-figure">
+            <figcaption class="modal-caption">
+              Model Training & Metrics
+            </figcaption>
+            <img
+              src="images/glaucoma-model training.png"
+              alt="glaucoma-model training"
+              onerror="this.style.display = 'none'"
+            />
+          </figure>
         </div>
 
-        <a href="https://github.com/atifsyahanim/glaucoma-classification.git" target="_blank" rel="noopener" class="btn-primary modal-cta">
-            <i class="ph ph-github-logo"></i> View on GitHub
+        <a
+          href="https://github.com/atifsyahanim/glaucoma-classification.git"
+          target="_blank"
+          rel="noopener"
+          class="btn-primary modal-cta"
+        >
+          <i class="ph ph-github-logo"></i> View on GitHub
         </a>
+      </div>
     </div>
-</div>
 
-<!-- Modal: RAG Chatbot -->
-<div id="modal-rag" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-rag-title">
-    <div class="modal-backdrop" onclick="closeModal('modal-rag')"></div>
-    <div class="modal-content">
-        <button class="modal-close" onclick="closeModal('modal-rag')" aria-label="Close modal">
-            <i class="ph ph-x"></i>
+    <!-- Modal: Rimba-X -->
+    <!-- Modal: Rimba X -->
+    <div
+      id="modal-rimbax"
+      class="modal"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="modal-rimbax-title"
+    >
+      <div class="modal-backdrop" onclick="closeModal('modal-rimbax')"></div>
+
+      <div class="modal-content">
+        <button
+          class="modal-close"
+          onclick="closeModal('modal-rimbax')"
+          aria-label="Close modal"
+        >
+          <i class="ph ph-x"></i>
+        </button>
+
+        <div class="modal-tag">
+          AI · Resume Analysis · Career Recommendation
+        </div>
+
+        <h3 id="modal-rimbax-title">Rimba-X</h3>
+
+        <p class="modal-desc">
+          Contributed to and enhanced an AI-powered career readiness platform
+          during participation in the International Conference on Youth
+          (ICYouth) Hackathon organized by Universiti Putra Malaysia (UPM). The
+          platform helps students and fresh graduates analyze career readiness,
+          identify skill gaps, and receive personalized recommendations for
+          career development.
+        </p>
+
+        <div class="modal-section">
+          <h4>Tech Stack</h4>
+
+          <div class="tech-tags">
+            <span>React</span>
+            <span>TypeScript</span>
+            <span>Supabase</span>
+            <span>REST API architecture</span>
+            <span>Prompt Engineering</span>
+            <span>Gemini API</span>
+            <span>NLP</span>
+            <span>Resume Parsing</span>
+            <span>Vercel</span>
+          </div>
+        </div>
+
+        <div class="modal-actions">
+          <a
+            href="https://rimba-x-ai-powered-skill-gap-intell.vercel.app/"
+            target="_blank"
+            rel="noopener"
+            class="modal-btn modal-btn--primary"
+          >
+            <i class="ph ph-rocket-launch"></i> Live Demo
+          </a>
+        </div>
+
+        <div class="modal-section">
+          <h4>What I Did</h4>
+
+          <ul>
+            <li>
+              Built a resume analysis pipeline that processes user input
+              (resume) and generates skill gap and career readiness evaluation
+            </li>
+
+            <li>
+              Designed and implemented the CareSpace dashboard to monitor user
+              wellbeing based on in-app interactions, visualizing engagement
+              patterns
+            </li>
+            <li>
+              Integrated Gemini API to build an AI chatbot within CareSpace for
+              a conversational AI chatbot that supports user wellbeing check-ins
+              and provides reflective, context-aware responses based on user
+              interactions within the platform
+            </li>
+            <li>
+              Developed backend functionalities for the platform, including API
+              handling and data flow between frontend and AI services
+            </li>
+          </ul>
+        </div>
+
+        <!-- Images -->
+        <div class="modal-images">
+          <figure class="modal-figure">
+            <figcaption class="modal-caption">Platform Interface</figcaption>
+
+            <img
+              src="images/rimbax-ui.jpeg"
+              alt="Rimba X Interface"
+              onerror="this.style.display = 'none'"
+            />
+          </figure>
+
+          <figure class="modal-figure">
+            <figcaption class="modal-caption">
+              Career Readiness Results
+            </figcaption>
+
+            <img
+              src="images/rimbax-readiness.png"
+              alt="Rimba X Workflow"
+              onerror="this.style.display = 'none'"
+            />
+          </figure>
+
+          <figure class="modal-figure">
+            <figcaption class="modal-caption">Care Space Dashboard</figcaption>
+
+            <img
+              src="images/rimbax-carespace.png"
+              alt="Rimba X Workflow"
+              onerror="this.style.display = 'none'"
+            />
+          </figure>
+
+          <figure class="modal-figure">
+            <figcaption class="modal-caption">
+              Care Space Chatbot (Dr. Care)
+            </figcaption>
+
+            <img
+              src="images/rimbax-chatbot.png"
+              alt="Rimba X Analysis Result"
+              onerror="this.style.display = 'none'"
+            />
+          </figure>
+        </div>
+
+        <a
+          href="https://github.com/atifsyahanim/RIMBA-X-AI-Powered-Skill-Gap-Intelligence-Youth-Wellbeing-Platform.git"
+          target="_blank"
+          rel="noopener"
+          class="btn-primary modal-cta"
+        >
+          <i class="ph ph-github-logo"></i>
+          View on GitHub
+        </a>
+      </div>
+    </div>
+    <!-- Modal: RAG Chatbot -->
+    <div
+      id="modal-rag"
+      class="modal"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="modal-rag-title"
+    >
+      <div class="modal-backdrop" onclick="closeModal('modal-rag')"></div>
+      <div class="modal-content">
+        <button
+          class="modal-close"
+          onclick="closeModal('modal-rag')"
+          aria-label="Close modal"
+        >
+          <i class="ph ph-x"></i>
         </button>
 
         <div class="modal-tag">RAG · LLM · NLP</div>
         <h3 id="modal-rag-title">RAG Chatbot – The Glory</h3>
 
         <p class="modal-desc">
-            A small-scale Retrieval-Augmented Generation (RAG) prototype built to query a PDF about the K-drama <em>The Glory</em>.
-            The chatbot answers questions factually using chunks from the document. <strong>Note:</strong> This is a testing model for learning purposes.
+          A small-scale Retrieval-Augmented Generation (RAG) prototype built to
+          query a PDF about the K-drama <em>The Glory</em>. The chatbot answers
+          questions factually using chunks from the document.
+          <strong>Note:</strong> This is a testing model for learning purposes.
         </p>
 
         <div class="modal-section">
-            <h4>Tech Stack</h4>
-            <div class="tech-tags">
-                <span>Python</span>
-                <span>Streamlit</span>
-                <span>LangChain</span>
-                <span>Sentence Transformers</span>
-                <span>FAISS</span>
-                <span>PyPDF2</span>
-                <span>HuggingFace Transformers</span>
-                <span>Self-Learn</span>
-            </div>
+          <h4>Tech Stack</h4>
+          <div class="tech-tags">
+            <span>Python</span>
+            <span>Streamlit</span>
+            <span>LangChain</span>
+            <span>Sentence Transformers</span>
+            <span>FAISS</span>
+            <span>PyPDF2</span>
+            <span>HuggingFace Transformers</span>
+            <span>Self-Learn</span>
+          </div>
         </div>
 
         <div class="modal-section">
-            <h4>What I Did</h4>
-            <ul>
-                <li>Extracted text from a Wikipedia PDF about <em>The Glory</em> K-drama</li>
-                <li>Split text into chunks for context using LangChain</li>
-                <li>Created embeddings for each chunk using Sentence Transformers</li>
-                <li>Built a FAISS vector database to retrieve relevant chunks based on user queries</li>
-                <li>Integrated a HuggingFace LLM to generate answers from retrieved chunks</li>
-                <li>Designed a Streamlit chatbot interface</li>
-                <li>Emphasized that this is a small, experimental RAG model for learning purposes</li>
-            </ul>
+          <h4>What I Did</h4>
+          <ul>
+            <li>
+              Extracted text from a Wikipedia PDF about
+              <em>The Glory</em> K-drama
+            </li>
+            <li>Split text into chunks for context using LangChain</li>
+            <li>
+              Created embeddings for each chunk using Sentence Transformers
+            </li>
+            <li>
+              Built a FAISS vector database to retrieve relevant chunks based on
+              user queries
+            </li>
+            <li>
+              Integrated a HuggingFace LLM to generate answers from retrieved
+              chunks
+            </li>
+            <li>Designed a Streamlit chatbot interface</li>
+            <li>
+              Emphasized that this is a small, experimental RAG model for
+              learning purposes
+            </li>
+          </ul>
         </div>
 
         <!-- Images -->
         <div class="modal-images">
-            <figure class="modal-figure">
-                <figcaption class="modal-caption">Chatbot Interface</figcaption>
-                <img src="images/rag-prototype.jpeg" alt="rag-prototype" onerror="this.style.display='none'">
-                <img src="images/rag-prototype2.jpeg" alt="rag-prototype2" onerror="this.style.display='none'">
-            </figure>
+          <figure class="modal-figure">
+            <figcaption class="modal-caption">Chatbot Interface</figcaption>
+            <img
+              src="images/rag-prototype.jpeg"
+              alt="rag-prototype"
+              onerror="this.style.display = 'none'"
+            />
+            <img
+              src="images/rag-prototype2.jpeg"
+              alt="rag-prototype2"
+              onerror="this.style.display = 'none'"
+            />
+          </figure>
         </div>
 
-        <a href="https://github.com/atifsyahanim/rag-pdf-chatbot-the-glory.git" target="_blank" rel="noopener" class="btn-primary modal-cta">
-            <i class="ph ph-github-logo"></i> View on GitHub
+        <a
+          href="https://github.com/atifsyahanim/rag-pdf-chatbot-the-glory.git"
+          target="_blank"
+          rel="noopener"
+          class="btn-primary modal-cta"
+        >
+          <i class="ph ph-github-logo"></i> View on GitHub
         </a>
+      </div>
     </div>
-</div>
 
-<!-- Modal: Database Management -->
-<div id="modal-database" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-database-title">
-    <div class="modal-backdrop" onclick="closeModal('modal-database')"></div>
-    <div class="modal-content">
-        <button class="modal-close" onclick="closeModal('modal-database')" aria-label="Close modal">
-            <i class="ph ph-x"></i>
+    <!-- Modal: Database Management -->
+    <div
+      id="modal-database"
+      class="modal"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="modal-database-title"
+    >
+      <div class="modal-backdrop" onclick="closeModal('modal-database')"></div>
+      <div class="modal-content">
+        <button
+          class="modal-close"
+          onclick="closeModal('modal-database')"
+          aria-label="Close modal"
+        >
+          <i class="ph ph-x"></i>
         </button>
 
         <div class="modal-tag">SQL · Database Design · Dashboard</div>
-        <h3 id="modal-database-title">Kindergarten Registration System (TTAUiTM)</h3>
+        <h3 id="modal-database-title">
+          Kindergarten Registration System (TTAUiTM)
+        </h3>
 
         <p class="modal-desc">
-            Created a database system to organise student registration and provide dashboards for teachers and admin. 
-            The system enables user login, data tracking, and visual reporting, demonstrating how structured databases improve efficiency.
+          Created a database system to organise student registration and provide
+          dashboards for teachers and admin. The system enables user login, data
+          tracking, and visual reporting, demonstrating how structured databases
+          improve efficiency.
         </p>
 
         <div class="modal-section">
-            <h4>Tech Stack</h4>
-            <div class="tech-tags">
-                <span>Oracle Academy / SQL</span><span>Database Design</span><span>Dashboard Reporting</span>
-            </div>
+          <h4>Tech Stack</h4>
+          <div class="tech-tags">
+            <span>Oracle Academy / SQL</span><span>Database Design</span
+            ><span>Dashboard Reporting</span>
+          </div>
         </div>
 
         <div class="modal-section">
-            <h4>What I Did</h4>
-            <ul>
-                <li>Interviewed the kindergarten principal to gather requirements</li>
-                <li>Designed relational database schema for student registration and administrative tasks</li>
-                <li>Implemented SQL scripts for creating tables, constraints, and sample data</li>
-                <li>Built interactive dashboards to track student information, and other metrics</li>
-                <li>Developed a simple login system to manage access for teachers and admins</li>
-            </ul>
+          <h4>What I Did</h4>
+          <ul>
+            <li>
+              Interviewed the kindergarten principal to gather requirements
+            </li>
+            <li>
+              Designed relational database schema for student registration and
+              administrative tasks
+            </li>
+            <li>
+              Implemented SQL scripts for creating tables, constraints, and
+              sample data
+            </li>
+            <li>
+              Built interactive dashboards to track student information, and
+              other metrics
+            </li>
+            <li>
+              Developed a simple login system to manage access for teachers and
+              admins
+            </li>
+          </ul>
         </div>
 
         <div class="modal-images">
-            <figure class="modal-figure">
-                <figcaption class="modal-caption">System Prototype</figcaption>
-                <img src="images/dbms-prototype.png" alt="dbms-poster" onerror="this.style.display='none'">
-            </figure>
-            <figure class="modal-figure">
-                <figcaption class="modal-caption">Entity Relationship Diagram (ERD)</figcaption>
-                <img src="images/dbms-erd.png" alt="dbms-erd" onerror="this.style.display='none'">
-            </figure>
-            <figure class="modal-figure">
-                <figcaption class="modal-caption">System Flowchart</figcaption>
-                <img src="images/dbms-flowchart.png" alt="dbms-flowchart" onerror="this.style.display='none'">
-            </figure>
-
+          <figure class="modal-figure">
+            <figcaption class="modal-caption">System Prototype</figcaption>
+            <img
+              src="images/dbms-prototype.png"
+              alt="dbms-poster"
+              onerror="this.style.display = 'none'"
+            />
+          </figure>
+          <figure class="modal-figure">
+            <figcaption class="modal-caption">
+              Entity Relationship Diagram (ERD)
+            </figcaption>
+            <img
+              src="images/dbms-erd.png"
+              alt="dbms-erd"
+              onerror="this.style.display = 'none'"
+            />
+          </figure>
+          <figure class="modal-figure">
+            <figcaption class="modal-caption">System Flowchart</figcaption>
+            <img
+              src="images/dbms-flowchart.png"
+              alt="dbms-flowchart"
+              onerror="this.style.display = 'none'"
+            />
+          </figure>
         </div>
-
+      </div>
     </div>
-</div>
 
-<!-- Modal: Life Expectancy -->
-<div id="modal-life" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-life-title">
-    <div class="modal-backdrop" onclick="closeModal('modal-life')"></div>
-    <div class="modal-content">
-        <button class="modal-close" onclick="closeModal('modal-life')" aria-label="Close modal">
-            <i class="ph ph-x"></i>
+    <!-- Modal: Life Expectancy -->
+    <div
+      id="modal-life"
+      class="modal"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="modal-life-title"
+    >
+      <div class="modal-backdrop" onclick="closeModal('modal-life')"></div>
+      <div class="modal-content">
+        <button
+          class="modal-close"
+          onclick="closeModal('modal-life')"
+          aria-label="Close modal"
+        >
+          <i class="ph ph-x"></i>
         </button>
 
         <div class="modal-tag">Data Analytics · Data Visualization</div>
         <h3 id="modal-life-title">Life Expectancy Analysis</h3>
 
         <p class="modal-desc">
-            An interactive data analytics project exploring global life expectancy trends from 2010 to 2014,
-            highlighting regional disparities and key contributing factors through visual storytelling.
+          An interactive data analytics project exploring global life expectancy
+          trends from 2010 to 2014, highlighting regional disparities and key
+          contributing factors through visual storytelling.
         </p>
 
         <div class="modal-section">
-            <h4>Tech Stack</h4>
-            <div class="tech-tags">
-                <span>Microsoft Excel</span>
-                <span>Power BI</span>
-                <span>Data Cleaning</span>
-                <span>Data Visualization</span>
-                <span>Dashboard Design</span>
-                <span>Exploratory Data Analysis</span>
-            </div>
+          <h4>Tech Stack</h4>
+          <div class="tech-tags">
+            <span>Microsoft Excel</span>
+            <span>Power BI</span>
+            <span>Data Cleaning</span>
+            <span>Data Visualization</span>
+            <span>Dashboard Design</span>
+            <span>Exploratory Data Analysis</span>
+          </div>
         </div>
 
         <div class="modal-section">
-            <h4>What I Did</h4>
-            <ul>
-                <li>Cleaned and structured life expectancy dataset (2010–2014) using Excel</li>
-                <li>Analyzed global and regional trends to identify key influencing factors</li>
-                <li>Designed an interactive Power BI dashboard for data exploration</li>
-                <li>Visualized disparities in life expectancy across countries and regions</li>
-                <li>Presented insights through clear and compelling visual storytelling</li>
-            </ul>
+          <h4>What I Did</h4>
+          <ul>
+            <li>
+              Cleaned and structured life expectancy dataset (2010–2014) using
+              Excel
+            </li>
+            <li>
+              Analyzed global and regional trends to identify key influencing
+              factors
+            </li>
+            <li>
+              Designed an interactive Power BI dashboard for data exploration
+            </li>
+            <li>
+              Visualized disparities in life expectancy across countries and
+              regions
+            </li>
+            <li>
+              Presented insights through clear and compelling visual
+              storytelling
+            </li>
+          </ul>
         </div>
 
         <!-- Images -->
         <div class="modal-images">
-            <figure class="modal-figure">
-                <figcaption class="modal-caption">Dashboard Overview</figcaption>
-                <img src="images/LE-dashboard.png" alt="LE-dashboard" onerror="this.style.display='none'">
-                <img src="images/LE-dashboard2.png" alt="LE-dashboard2" onerror="this.style.display='none'">
-                <img src="images/LE-dashboard3.png" alt="LE-dashboard3" onerror="this.style.display='none'">
-            </figure>
+          <figure class="modal-figure">
+            <figcaption class="modal-caption">Dashboard Overview</figcaption>
+            <img
+              src="images/LE-dashboard.png"
+              alt="LE-dashboard"
+              onerror="this.style.display = 'none'"
+            />
+            <img
+              src="images/LE-dashboard2.png"
+              alt="LE-dashboard2"
+              onerror="this.style.display = 'none'"
+            />
+            <img
+              src="images/LE-dashboard3.png"
+              alt="LE-dashboard3"
+              onerror="this.style.display = 'none'"
+            />
+          </figure>
         </div>
-
+      </div>
     </div>
-</div>
 
-<!-- Train Ridership -->
-<div id="modal-datathon" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-datathon-title">
-    <div class="modal-backdrop" onclick="closeModal('modal-datathon')"></div>
-    <div class="modal-content">
-        <button class="modal-close" onclick="closeModal('modal-datathon')" aria-label="Close modal">
-            <i class="ph ph-x"></i>
+    <!-- Train Ridership -->
+    <div
+      id="modal-datathon"
+      class="modal"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="modal-datathon-title"
+    >
+      <div class="modal-backdrop" onclick="closeModal('modal-datathon')"></div>
+      <div class="modal-content">
+        <button
+          class="modal-close"
+          onclick="closeModal('modal-datathon')"
+          aria-label="Close modal"
+        >
+          <i class="ph ph-x"></i>
         </button>
 
         <div class="modal-tag">Data Analytics · Data Visualization</div>
         <h3 id="modal-datathon-title">Malaysia Train Ridership Prediction</h3>
 
         <p class="modal-desc">
-            Participated in the Malaysia Data Innovation Talent x Department of Statistics Malaysia Datathon. 
-            Analyzed train ridership data, applied predictive modeling, and visualized insights via an interactive dashboard aligned with SDG 9.
+          Participated in the Malaysia Data Innovation Talent x Department of
+          Statistics Malaysia Datathon. Analyzed train ridership data, applied
+          predictive modeling, and visualized insights via an interactive
+          dashboard aligned with SDG 9.
         </p>
 
         <div class="modal-section">
-            <h4>Tech Stack</h4>
-            <div class="tech-tags">
-                <span>Python</span>
-                <span>Scikit-learn</span>
-                <span>NumPy & Pandas</span>
-                <span>Power BI</span>
-                <span>Data Cleaning</span>
-                <span>Data Visualization</span>
-                <span>Exploratory Data Analysis</span>
-            </div>
+          <h4>Tech Stack</h4>
+          <div class="tech-tags">
+            <span>Python</span>
+            <span>Scikit-learn</span>
+            <span>NumPy & Pandas</span>
+            <span>Power BI</span>
+            <span>Data Cleaning</span>
+            <span>Data Visualization</span>
+            <span>Exploratory Data Analysis</span>
+          </div>
         </div>
 
         <div class="modal-section">
-            <h4>What I Did</h4>
-            <ul>
-                <li>Analyzed 4 historical train ridership data in Malaysia (LRT Ampang, LRT Kelana Jaya, MRT Kajang, MRT Putrajaya)</li>
-                <li>Developed predictive models to forecast future ridership using Python</li>
-                <li>Designed an interactive dashboard in Power BI to communicate insights effectively</li>
-                <li>Aligned findings with SDG 9: Industry, Innovation, and Infrastructure</li>
-                <li>Presented methodology and visual insights to the judging panel and received positive feedback</li>
-            </ul>
+          <h4>What I Did</h4>
+          <ul>
+            <li>
+              Analyzed 4 historical train ridership data in Malaysia (LRT
+              Ampang, LRT Kelana Jaya, MRT Kajang, MRT Putrajaya)
+            </li>
+            <li>
+              Developed predictive models to forecast future ridership using
+              Python
+            </li>
+            <li>
+              Designed an interactive dashboard in Power BI to communicate
+              insights effectively
+            </li>
+            <li>
+              Aligned findings with SDG 9: Industry, Innovation, and
+              Infrastructure
+            </li>
+            <li>
+              Presented methodology and visual insights to the judging panel and
+              received positive feedback
+            </li>
+          </ul>
         </div>
 
         <!-- Images -->
         <div class="modal-images">
-            <figure class="modal-figure">
-                <figcaption class="modal-caption">Dashboard Overview</figcaption>
-                <img src="images/train-dashboard1.png" alt="train-dashboard1" onerror="this.style.display='none'">
-                <img src="images/train-dashboard2.png" alt="train-dashboard2" onerror="this.style.display='none'">
-                <img src="images/train-dashboard3.png" alt="train-dashboard3" onerror="this.style.display='none'">
-                <img src="images/train-dashboard4.png" alt="train-dashboard4" onerror="this.style.display='none'">
-                <img src="images/train-dashboard5.png" alt="train-dashboard5" onerror="this.style.display='none'">
-                <img src="images/train-dashboard6.png" alt="train-dashboard6" onerror="this.style.display='none'">
-                <img src="images/train-dashboard7.png" alt="train-dashboard7" onerror="this.style.display='none'">
-            </figure>
+          <figure class="modal-figure">
+            <figcaption class="modal-caption">Dashboard Overview</figcaption>
+            <img
+              src="images/train-dashboard1.png"
+              alt="train-dashboard1"
+              onerror="this.style.display = 'none'"
+            />
+            <img
+              src="images/train-dashboard2.png"
+              alt="train-dashboard2"
+              onerror="this.style.display = 'none'"
+            />
+            <img
+              src="images/train-dashboard3.png"
+              alt="train-dashboard3"
+              onerror="this.style.display = 'none'"
+            />
+            <img
+              src="images/train-dashboard4.png"
+              alt="train-dashboard4"
+              onerror="this.style.display = 'none'"
+            />
+            <img
+              src="images/train-dashboard5.png"
+              alt="train-dashboard5"
+              onerror="this.style.display = 'none'"
+            />
+            <img
+              src="images/train-dashboard6.png"
+              alt="train-dashboard6"
+              onerror="this.style.display = 'none'"
+            />
+            <img
+              src="images/train-dashboard7.png"
+              alt="train-dashboard7"
+              onerror="this.style.display = 'none'"
+            />
+          </figure>
         </div>
-
+      </div>
     </div>
-</div>
 
-<!-- ─────────────────────────────────────────
+    <!-- ─────────────────────────────────────────
      EDUCATION
 ──────────────────────────────────────────── -->
-<section id="education" class="section section-alt fade-up">
-    <div class="section-inner">
+    <section id="education" class="section section-alt fade-up">
+      <div class="section-inner">
         <span class="section-label">Academic Journey</span>
         <h2 class="section-title">Education</h2>
 
         <div class="edu-timeline">
-
-            <!-- Degree -->
-            <div class="edu-card edu-card--active">
-                <div class="edu-dot"></div>
-                <div class="edu-body">
-                    <div class="edu-header">
-                        <div>
-                            <span class="edu-badge edu-badge--green">Completed</span>
-                            <h3>Bachelor of Information Systems (Hons.)<br><em>Intelligent Systems Engineering</em></h3>
-                            <p class="edu-school">Universiti Teknologi MARA (UiTM) Shah Alam</p>
-                        </div>
-                        <span class="edu-year">2023 – 2026</span>
-                    </div>
-                    <ul class="edu-details">
-                        <li>Specialized in AI, machine learning, and data-driven systems</li>
-                        <li>Final Year Project: Voice disorder classification using deep learning, with a web-based prototype to demonstrate model output</li>
-                        <li>Relevant courses: Machine Learning, Data Mining, Time Series Analysis, Database Management,
-                            Business Data Analytics, Optimization Algorithms </li>
-                        <li>Developed strong foundation in programming (Python), SQL, and data analysis</li>
-                    </ul>
+          <!-- Degree -->
+          <div class="edu-card edu-card--active">
+            <div class="edu-dot"></div>
+            <div class="edu-body">
+              <div class="edu-header">
+                <div>
+                  <span class="edu-badge edu-badge--green">Completed</span>
+                  <h3>
+                    Bachelor of Information Systems (Hons.)<br /><em
+                      >Intelligent Systems Engineering</em
+                    >
+                  </h3>
+                  <p class="edu-school">
+                    Universiti Teknologi MARA (UiTM) Shah Alam
+                  </p>
                 </div>
+                <span class="edu-year">2023 – 2026</span>
+              </div>
+              <ul class="edu-details">
+                <li>
+                  Specialized in AI, machine learning, and data-driven systems
+                </li>
+                <li>
+                  Final Year Project: Voice disorder classification using deep
+                  learning, with a web-based prototype to demonstrate model
+                  output
+                </li>
+                <li>
+                  Relevant courses: Machine Learning, Data Mining, Time Series
+                  Analysis, Database Management, Business Data Analytics,
+                  Optimization Algorithms
+                </li>
+                <li>
+                  Developed strong foundation in programming (Python), SQL, and
+                  data analysis
+                </li>
+              </ul>
             </div>
+          </div>
 
-            <!-- Diploma -->
-            <div class="edu-card">
-                <div class="edu-dot"></div>
-                <div class="edu-body">
-                    <div class="edu-header">
-                        <div>
-                            <span class="edu-badge edu-badge--green">Completed</span>
-                            <h3>Diploma in Actuarial Science</h3>
-                            <p class="edu-school">Universiti Teknologi MARA (UiTM) Seremban</p>
-                        </div>
-                        <span class="edu-year">2020 – 2023</span>
-                    </div>
-                    <ul class="edu-details">
-                        <li>Strong foundation in statistics, probability, and financial mathematics</li>
-                        <li>Built analytical and problem-solving skills through mathematically intensive coursework</li>
-                        <li>Developed growing interest in programming and technology, leading to further studies in intelligent systems</li>
-                    </ul>
-                    <!-- Convocation photo placeholder -->
-                    <div class="edu-photo-slot">
-                        <img
-                            src="images/convo4.jpeg"
-                            alt="Convocation photo"
-                            class="edu-conv-photo"
-                            onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
-                        >
-                        <div class="edu-photo-placeholder" style="display:none;">
-                            <i class="ph ph-graduation-cap"></i>
-                            <span>Convocation photo coming soon</span>
-                        </div>
-                    </div>
+          <!-- Diploma -->
+          <div class="edu-card">
+            <div class="edu-dot"></div>
+            <div class="edu-body">
+              <div class="edu-header">
+                <div>
+                  <span class="edu-badge edu-badge--green">Completed</span>
+                  <h3>Diploma in Actuarial Science</h3>
+                  <p class="edu-school">
+                    Universiti Teknologi MARA (UiTM) Seremban
+                  </p>
                 </div>
+                <span class="edu-year">2020 – 2023</span>
+              </div>
+              <ul class="edu-details">
+                <li>
+                  Strong foundation in statistics, probability, and financial
+                  mathematics
+                </li>
+                <li>
+                  Built analytical and problem-solving skills through
+                  mathematically intensive coursework
+                </li>
+                <li>
+                  Developed growing interest in programming and technology,
+                  leading to further studies in intelligent systems
+                </li>
+              </ul>
+              <!-- Convocation photo placeholder -->
+              <div class="edu-photo-slot">
+                <img
+                  src="images/convo4.jpeg"
+                  alt="Convocation photo"
+                  class="edu-conv-photo"
+                  onerror="
+                    this.style.display = 'none';
+                    this.nextElementSibling.style.display = 'flex';
+                  "
+                />
+                <div class="edu-photo-placeholder" style="display: none">
+                  <i class="ph ph-graduation-cap"></i>
+                  <span>Convocation photo coming soon</span>
+                </div>
+              </div>
             </div>
-
+          </div>
         </div>
-    </div>
-</section>
+      </div>
+    </section>
 
-<!-- ─────────────────────────────────────────
+    <!-- ─────────────────────────────────────────
      CERTIFICATIONS
 ──────────────────────────────────────────── -->
-<section id="certifications" class="section fade-up">
-    <div class="section-inner">
+    <section id="certifications" class="section fade-up">
+      <div class="section-inner">
         <span class="section-label">Credentials</span>
         <h2 class="section-title">Certifications</h2>
 
         <div class="cert-grid">
-
-            <div class="cert-card">
-                <img src="images/Udemy Python for Data Science and Machine Learning_page-0001.jpg" alt="Certification 1" class="cert-photo"
-                     onerror="this.style.display='none'">
-                <div class="cert-body">
-                    <h4 class="cert-name">Udemy Python for Data Science and Machine Learning Bootcamp</h4>
-                    <p class="cert-desc">Hands-on Python training covering NumPy, Pandas, Seaborn, Matplotlib, Plotly, Scikit-learn, Machine Learning, Tensorflow, and more.</p>
-                </div>
+          <div class="cert-card">
+            <img
+              src="images/Udemy Python for Data Science and Machine Learning_page-0001.jpg"
+              alt="Certification 1"
+              class="cert-photo"
+              onerror="this.style.display = 'none'"
+            />
+            <div class="cert-body">
+              <h4 class="cert-name">
+                Udemy Python for Data Science and Machine Learning Bootcamp
+              </h4>
+              <p class="cert-desc">
+                Hands-on Python training covering NumPy, Pandas, Seaborn,
+                Matplotlib, Plotly, Scikit-learn, Machine Learning, Tensorflow,
+                and more.
+              </p>
             </div>
+          </div>
 
-            <div class="cert-card">
-                <img src="images/Oracle Database Design_page-0001.jpg" alt="Certification 2" class="cert-photo"
-                     onerror="this.style.display='none'">
-                <div class="cert-body">
-                    <h4 class="cert-name">Oracle Academy Database Design</h4>
-                    <p class="cert-desc">Learned data modeling, entity relationship diagrams, normalization, and relational schema design.</p>
-                </div>
+          <div class="cert-card">
+            <img
+              src="images/Oracle Database Design_page-0001.jpg"
+              alt="Certification 2"
+              class="cert-photo"
+              onerror="this.style.display = 'none'"
+            />
+            <div class="cert-body">
+              <h4 class="cert-name">Oracle Academy Database Design</h4>
+              <p class="cert-desc">
+                Learned data modeling, entity relationship diagrams,
+                normalization, and relational schema design.
+              </p>
             </div>
+          </div>
 
-            <div class="cert-card">
-                <img src="images/Oracle Database Programming with SQL_page-0001.jpg" alt="Certification 2" class="cert-photo"
-                     onerror="this.style.display='none'">
-                <div class="cert-body">
-                    <h4 class="cert-name">Oracle Academy Database Programming with SQL</h4>
-                    <p class="cert-desc">Gained hands-on experience in writing SQL queries, managing tables, and manipulating data using Oracle SQL.</p>
-                </div>
+          <div class="cert-card">
+            <img
+              src="images/Oracle Database Programming with SQL_page-0001.jpg"
+              alt="Certification 2"
+              class="cert-photo"
+              onerror="this.style.display = 'none'"
+            />
+            <div class="cert-body">
+              <h4 class="cert-name">
+                Oracle Academy Database Programming with SQL
+              </h4>
+              <p class="cert-desc">
+                Gained hands-on experience in writing SQL queries, managing
+                tables, and manipulating data using Oracle SQL.
+              </p>
             </div>
+          </div>
 
-            <div class="cert-card">
-                <img src="images/Udemy React Native Mobile App CLI_page-0001.jpg" alt="Certification 2" class="cert-photo"
-                     onerror="this.style.display='none'">
-                <div class="cert-body">
-                    <h4 class="cert-name">Udemy React Native: Mobile App Development (CLI)</h4>
-                    <p class="cert-desc">Learned core concepts of mobile app development using React Native, including components, navigation, and CLI- based project setup.</p>
-                </div>
+          <div class="cert-card">
+            <img
+              src="images/Udemy React Native Mobile App CLI_page-0001.jpg"
+              alt="Certification 2"
+              class="cert-photo"
+              onerror="this.style.display = 'none'"
+            />
+            <div class="cert-body">
+              <h4 class="cert-name">
+                Udemy React Native: Mobile App Development (CLI)
+              </h4>
+              <p class="cert-desc">
+                Learned core concepts of mobile app development using React
+                Native, including components, navigation, and CLI- based project
+                setup.
+              </p>
             </div>
+          </div>
 
-            <div class="cert-card">
-                <img src="images/mdit_page-0001.jpg" alt="Certification 2" class="cert-photo"
-                     onerror="this.style.display='none'">
-                <div class="cert-body">
-                    <h4 class="cert-name">Malaysia Data Innovation Talent x DOSM Datathon 2024</h4>
-                    <p class="cert-desc">Certificate of Participation in MDIT, recognizing effective data analysis, predictive modeling, and interactive dashboard development.</p>
-                </div>
+          <div class="cert-card">
+            <img
+              src="images/mdit_page-0001.jpg"
+              alt="Certification 2"
+              class="cert-photo"
+              onerror="this.style.display = 'none'"
+            />
+            <div class="cert-body">
+              <h4 class="cert-name">
+                Malaysia Data Innovation Talent x DOSM Datathon 2024
+              </h4>
+              <p class="cert-desc">
+                Certificate of Participation in MDIT, recognizing effective data
+                analysis, predictive modeling, and interactive dashboard
+                development.
+              </p>
             </div>
+          </div>
 
-            <!-- Duplicate a cert-card block to add more -->
-
+          <!-- Duplicate a cert-card block to add more -->
         </div>
-    </div>
-</section>
+      </div>
+    </section>
 
-<!-- ─────────────────────────────────────────
+    <!-- ─────────────────────────────────────────
      CONTACT
 ──────────────────────────────────────────── -->
-<section id="contact" class="section fade-up">
-    <div class="section-inner contact-inner">
+    <section id="contact" class="section fade-up">
+      <div class="section-inner contact-inner">
         <span class="section-label">Let's Connect</span>
         <h2 class="section-title">Get In Touch</h2>
         <p class="contact-sub">
-            Excited about opportunities in data science, data analytics, graduate programs, or any entry-level role
-            where I can learn and grow. Send me a message — I’ll get back to you quickly!
+          Excited about opportunities in data science, data analytics, graduate
+          programs, or any entry-level role where I can learn and grow. Send me
+          a message — I’ll get back to you quickly!
         </p>
 
         <div class="contact-links">
-            <a href="mailto:atifsyahanimm@gmail.com" class="contact-link">
-                <div class="contact-icon"><i class="ph ph-envelope-simple"></i></div>
-                <div>
-                    <span class="contact-link-label">Email</span>
-                    <span class="contact-link-value">atifsyahanimm@gmail.com</span>
-                </div>
-            </a>
+          <a href="mailto:atifsyahanimm@gmail.com" class="contact-link">
+            <div class="contact-icon">
+              <i class="ph ph-envelope-simple"></i>
+            </div>
+            <div>
+              <span class="contact-link-label">Email</span>
+              <span class="contact-link-value">atifsyahanimm@gmail.com</span>
+            </div>
+          </a>
 
-            <a href="https://github.com/atifsyahanim" target="_blank" rel="noopener" class="contact-link">
-                <div class="contact-icon"><i class="ph ph-github-logo"></i></div>
-                <div>
-                    <span class="contact-link-label">GitHub</span>
-                    <span class="contact-link-value">github.com/atifsyahanim</span>
-                </div>
-            </a>
+          <a
+            href="https://github.com/atifsyahanim"
+            target="_blank"
+            rel="noopener"
+            class="contact-link"
+          >
+            <div class="contact-icon"><i class="ph ph-github-logo"></i></div>
+            <div>
+              <span class="contact-link-label">GitHub</span>
+              <span class="contact-link-value">github.com/atifsyahanim</span>
+            </div>
+          </a>
 
-            <a href="https://linkedin.com/in/nur-atif-syahanim" target="_blank" rel="noopener" class="contact-link">
-                <div class="contact-icon"><i class="ph ph-linkedin-logo"></i></div>
-                <div>
-                    <span class="contact-link-label">LinkedIn</span>
-                    <span class="contact-link-value">linkedin.com/in/nur-atif-syahanim</span>
-                </div>
-            </a>
+          <a
+            href="https://linkedin.com/in/nur-atif-syahanim"
+            target="_blank"
+            rel="noopener"
+            class="contact-link"
+          >
+            <div class="contact-icon"><i class="ph ph-linkedin-logo"></i></div>
+            <div>
+              <span class="contact-link-label">LinkedIn</span>
+              <span class="contact-link-value"
+                >linkedin.com/in/nur-atif-syahanim</span
+              >
+            </div>
+          </a>
         </div>
-    </div>
-</section>
+      </div>
+    </section>
 
-<!-- ─────────────────────────────────────────
+    <!-- ─────────────────────────────────────────
      FOOTER
 ──────────────────────────────────────────── -->
-<footer>
-    <p>© 2026 Atif · Built with HTML, CSS &amp; Vanilla JS</p>
-</footer>
+    <footer>
+      <p>© 2026 Atif · Built with HTML, CSS &amp; Vanilla JS</p>
+    </footer>
 
-<script src="script.js"></script>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>

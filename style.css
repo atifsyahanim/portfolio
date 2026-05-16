@@ -762,6 +762,52 @@ nav.scrolled { padding: 12px 40px; }
     margin-bottom: 12px;
 }
 
+/* Modal action buttons row */
+.modal-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 28px;
+    margin-bottom: 28px;
+}
+
+.modal-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-family: var(--font-body);
+    font-weight: 600;
+    font-size: 0.9rem;
+    padding: 11px 22px;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    transition: transform var(--transition), box-shadow var(--transition), background var(--transition);
+}
+
+.modal-btn--primary {
+    background: var(--accent);
+    color: #fff;
+    box-shadow: 0 4px 16px rgba(61,126,255,0.3);
+}
+.modal-btn--primary:hover {
+    background: #5591ff;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(61,126,255,0.45);
+}
+
+/* Secondary style — use for GitHub when you have both links */
+.modal-btn--ghost {
+    background: transparent;
+    color: var(--text);
+    border: 1.5px solid var(--border);
+}
+.modal-btn--ghost:hover {
+    border-color: var(--accent);
+    color: var(--accent);
+    transform: translateY(-2px);
+}
+
 /* Tech tags in modal */
 .tech-tags {
     display: flex;
